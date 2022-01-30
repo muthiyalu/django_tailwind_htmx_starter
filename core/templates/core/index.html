@@ -1,0 +1,20 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="{%static 'css/main.min.css'%}">
+
+<body>
+  <div class="div m-10 p-10 bg-purple-500 rounded-xl">blue</div>
+
+  <div hx-get="/admin/" hx-swap="outerHTML">admin</div>
+
+  <script src="{% static 'js/htmx.min.js' %}"></script>
+</body>
+</html>
+
